@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-Tic Tac Toe is a world popular 2 player game. Here I have creadted the same using C programming. 
+Tic Tac Toe is a world popular 2 player game. Here I have created the same using C programming. 
 
 The below vedio would help inorder to understand the interface and the game.
 
