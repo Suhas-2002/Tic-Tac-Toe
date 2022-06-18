@@ -2,14 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
-int Logic(char a[3][3], char *p1, char *p2)
-{
+int Logic(char a[3][3], char *p1, char *p2){
     int D1 = 0, D2 = 0, d1 = 0, d2 = 0;
-    for (int i = 0; i < 3; i++)
-    {
+    for (int i = 0; i < 3; i++){
         int r1 = 0, r2 = 0, c1 = 0, c2 = 0;
-        for (int j = 0; j < 3; j++)
-        {
+        for (int j = 0; j < 3; j++){
             if (a[i][j] == 'X') r1++;
             else if (a[i][j] == 'O') r2++;
             if (a[j][i] == 'X') c1++;
@@ -31,7 +28,7 @@ int Logic(char a[3][3], char *p1, char *p2)
             return 1;
         }
         else if (r2 == 3 || c2 == 3){
-            printf("Game Finished!\nCongratulations p2, you won!", p2);
+            printf("Game Finished!\nCongratulations %s, you won!", p2);
             return 1;
         }
         else if (D1 == 3 || d1 == 3){
@@ -39,7 +36,7 @@ int Logic(char a[3][3], char *p1, char *p2)
             return 1;
         }
         else if (D2 == 3 || d2 == 3){
-            printf("Game Finished!\nCongratulations p2, you won!", p2);
+            printf("Game Finished!\nCongratulations %s, you won!", p2);
             return 1;
         }
     }
